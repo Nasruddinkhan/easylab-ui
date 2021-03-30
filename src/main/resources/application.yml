@@ -1,0 +1,35 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: easylab-ui
+#
+url-header: http
+
+cors:
+  allowed:
+    origins: '*'
+    methods: '*'
+  exposed:
+    headers: Access-Control-Allow-Origin, Content-Disposition, Access-Control-Expose-Headers,Access-Control-Allow-Headers,Access-Control-Allow-Credentials
+
+log.level: info
+log.file:  easylab-ui.log
+app.name:  easylab-ui
+app.version: @project.version@
+log.pattern: EVENTTIME=%d{"yyyy-MM-dd HH:mm:ss.SSSXXX", UTC},LEVEL=%level,APP_NAME=${APP_NAME},APP_VERSION=${APP_VERSION},Line=%line,DETAIL=Package:%logger{36}:%msg%n
+log.path: logs
+easylab:
+  portal:
+    host: localhost:8084
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: "*"
+ui-endpoints:
+  get-header-config: ${url-header}://${easylab.portal.host}/proxy/api/services/v1/header-config
