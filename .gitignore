@@ -105,7 +105,8 @@ modules.xml
 
 # Compiled class file
 *.class
-
+mvnw
+mvnw.cmd
 # Log file
 *.log
 
