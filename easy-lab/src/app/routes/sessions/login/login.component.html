@@ -9,12 +9,9 @@
         <input matInput formControlName="username" required>
         <mat-error *ngIf="username.invalid">
           <span *ngIf="username.errors.required">
-            {{'login.please_enter' | translate}} <strong>username</strong>
+            {{'login.please_enter' }} <strong>username</strong>
           </span>
 
-          <span *ngIf="username.errors">
-            {{ username.errors }}
-          </span>
         </mat-error>
       </mat-form-field>
 
@@ -24,12 +21,10 @@
                formControlName="password" required>
         <mat-error *ngIf="password.invalid">
           <span *ngIf="password.errors.required">
-            {{'login.please_enter' | translate}} <strong>password</strong>
+            {{'login.please_enter'}} <strong>password</strong>
           </span>
 
-          <span *ngIf="password.errors">
-            {{ password.errors }}
-          </span>
+          
         </mat-error>
       </mat-form-field>
 
