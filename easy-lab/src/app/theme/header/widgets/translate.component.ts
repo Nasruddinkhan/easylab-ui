@@ -20,11 +20,11 @@ import { SettingsService } from '@core';
 export class TranslateComponent {
   langs = {
     'en-US': 'English',
-    'zh-CN': '中文简体'
+    'hi-IN': 'हिन्दी'
     };
 
   constructor(private translate: TranslateService, private settings: SettingsService) {
-    translate.addLangs(['en-US', 'zh-CN']);
+    translate.addLangs(['en-US', 'hi-IN']);
   }
 
   useLanguage(language: string) {
