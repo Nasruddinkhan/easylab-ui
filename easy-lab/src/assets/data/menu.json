@@ -27,6 +27,11 @@
           "route": "settings",
           "name": "settings",
           "type": "link"
+        },
+        {
+          "route": "changepaasword",
+          "name": "Change Password",
+          "type": "link"
         }
       ]
     }
