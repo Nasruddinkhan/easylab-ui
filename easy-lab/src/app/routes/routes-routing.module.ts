@@ -42,6 +42,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./permissions/permissions.module').then(m => m.PermissionsModule),
       },
+      {
+        path: 'bookappointment',
+        loadChildren: () =>
+          import('./book-appointment/book-appointment.module').then(m => m.BookAppointmentModule),
+      },
     ],
   },
   {
