@@ -8,6 +8,7 @@ public class EasylabUiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EasylabUiApplication.class, args);
+		
 	}
 
 }

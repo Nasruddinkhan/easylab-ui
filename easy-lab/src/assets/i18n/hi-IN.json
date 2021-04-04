@@ -13,8 +13,9 @@
     "sessions.404": "404",
     "sessions.500": "500",
     "helpers": "Helpers",
-    "helpers.css-class": "CSS Class"
-   
+    "helpers.css-class": "CSS Class",
+    "bookappointment":"नियुक्ति"
+
   },
   "validations": {
     "required": "यह फ़ील्ड आवश्यक है",
@@ -26,6 +27,11 @@
     "inconsistent": "Inconsistent with {{value}}",
     "invalid_email": "Invalid email"
   },
+  "bookapointment":{
+    "apointment-header":"निर्धारित तारीख बुक करना",
+    "byself":"स्वयं के द्वारा",
+    "bydocter":"डॉक्टर परीक्षण प्रिस्क्रिप्शन अपलोड करके"
+   },
   "user": {
     "profile": "profile",
     "settings": "settings",

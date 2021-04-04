@@ -43,6 +43,11 @@
     "create_one": "Click here to create one",
     "please_enter": "Please enter"
   },
+ "bookapointment":{
+  "apointment-header":"Book Online Appointment",
+  "byself":"By Self",
+  "bydocter":"By Uploading Docter test Prescription"
+ },
   "register": {
     "welcome": "Welcome",
     "title": "It only takes a few seconds to create your account",

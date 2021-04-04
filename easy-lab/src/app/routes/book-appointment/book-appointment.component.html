@@ -1,1 +1,13 @@
-<p>book-appointment works!</p>
+<mat-card>
+    
+    <section>
+      <h4>{{'bookapointment.apointment-header' | translate}} {{selectedType}}</h4>
+      <mat-radio-button (click)="selectAppointmentType('by-self')" name="color"  color="primary"><p>{{'bookapointment.byself' | translate}}</p></mat-radio-button>
+      <mat-radio-button   (click)="selectAppointmentType('by-docter')" name="color" color="accent"><p class="ow">{{'bookapointment.bydocter' | translate}}</p></mat-radio-button>
+    </section>
+       
+    
+    <app-by-self *ngIf="'by-self' === selectedType"></app-by-self>
+    <app-by-docter *ngIf="'by-docter' === selectedType"></app-by-docter>
+    
+  </mat-card>

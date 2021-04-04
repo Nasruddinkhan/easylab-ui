@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-appointment.component.scss']
 })
 export class BookAppointmentComponent implements OnInit {
-
+  selectedType: string ;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  selectAppointmentType(type: string): void {
+    this.selectedType = type ;
+  }
 }
