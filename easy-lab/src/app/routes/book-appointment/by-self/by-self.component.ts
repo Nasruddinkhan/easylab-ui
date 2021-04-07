@@ -38,5 +38,6 @@ const ELEMENT_DATA: Element[] = [
   { checked: false,  testname: 'test 1', testgroup: "testgroup 1" },
   { checked: false,  testname: 'test 2', testgroup: "testgroup 2" },
   { checked: false,  testname: 'test 3', testgroup: "testgroup 3" },
- 
+  { checked: false,  testname: 'test 4', testgroup: "testgroup 4" },
+  { checked: false,  testname: 'test 5', testgroup: "testgroup 5" },
 ];
