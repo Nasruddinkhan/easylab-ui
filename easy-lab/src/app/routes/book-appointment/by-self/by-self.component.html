@@ -1,0 +1,99 @@
+<mat-divider flex></mat-divider>
+
+<form [formGroup]="bySelfComponentForm" class="form-field-full ">
+    <div fxLayout="row wrap" fxLayoutGap="8px grid" >
+        <div fxFlex="25" fxFlex.lt-md="100">
+            <mat-form-field appearance="outline">
+                <mat-label>Test Group</mat-label>
+                <input matInput placeholder="Simple placeholder" formControlName="testGroup" required>
+                <mat-error *ngIf="bySelfComponentForm.get('testGroup').invalid">Please enter city</mat-error>
+            </mat-form-field>
+        </div>
+        <div fxFlex="25" fxFlex.lt-md="100">
+            <mat-form-field appearance="outline">
+                <mat-label>Test Package</mat-label>
+                <input matInput placeholder="Simple placeholder" formControlName="testPackage" required>
+                <mat-error *ngIf="bySelfComponentForm.get('testPackage').invalid">Please enter city</mat-error>
+            </mat-form-field>
+        </div>
+        <div fxFlex="25" fxFlex.lt-md="100">
+            <mat-form-field appearance="outline">
+                <mat-label>Payment Mode</mat-label>
+
+                <input matInput placeholder="Simple placeholder" formControlName="paymentmode" required>
+                <mat-error *ngIf="bySelfComponentForm.get('paymentmode').invalid">Please enter city</mat-error>
+            </mat-form-field>
+        </div>
+        <div fxFlex="25" fxFlex.lt-md="100">
+            <mat-form-field appearance="outline">
+                <mat-label>Apointment Date & Time</mat-label>
+                <input matInput placeholder="Simple placeholder" formControlName="paymentmode" required>
+                <mat-error *ngIf="bySelfComponentForm.get('paymentmode').invalid">Please enter city</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <div fxLayout="row wrap" fxLayoutGap="8px grid">
+
+        <div class="matero-col" fxFlex="50" fxFlex.lt-md="100">
+            <mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
+                <ng-container matColumnDef="testname">
+                    <mat-header-cell *matHeaderCellDef>Test Name </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <mat-checkbox ></mat-checkbox>
+                        <p style="margin-left: 2px;"> {{element.testname}}</p>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="testgroup">
+                    <mat-header-cell *matHeaderCellDef> Test Group </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.testgroup}} </mat-cell>
+                </ng-container>
+
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"
+                    [ngClass]="{hovered: row.hovered, highlighted: row.highlighted}"
+                    (click)="row.highlighted = !row.highlighted" (mouseover)="row.hovered = true"
+                    (mouseout)="row.hovered = false"></mat-row>
+            </mat-table>
+        </div>
+        <div class="matero-col" fxFlex="50" fxFlex.lt-md="100">
+            <div fxLayout="row wrap" fxLayoutGap="8px grid" class="matero-row">
+                <div fxFlex="50" fxFlex.lt-md="100">
+                    <mat-form-field appearance="outline">
+                        <mat-label>No of test selected</mat-label>
+                        <input matInput placeholder="Simple placeholder" formControlName="paymentmode" required>
+                        <mat-error *ngIf="bySelfComponentForm.get('paymentmode').invalid">Please enter city</mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50" fxFlex.lt-md="100">
+                    <mat-form-field appearance="outline">
+                        <mat-label>No of test group selected</mat-label>
+                        <input matInput placeholder="Simple placeholder" formControlName="paymentmode" required>
+                        <mat-error *ngIf="bySelfComponentForm.get('paymentmode').invalid">Please enter city</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="8px grid" class="matero-row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Total Cost</mat-label>
+                    <input matInput placeholder="Simple placeholder" formControlName="paymentmode" required>
+                    <mat-error *ngIf="bySelfComponentForm.get('paymentmode').invalid">Please enter city</mat-error>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="8px grid" class="matero-row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Remarks</mat-label>
+                    <textarea matInput placeholder="Simple placeholder" formControlName="paymentmode" required></textarea>
+                    <mat-error *ngIf="bySelfComponentForm.get('paymentmode').invalid">Please enter city</mat-error>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row wrap"  fxLayoutAlign="center" >
+                <button  mat-raised-button color="primary">Save</button>
+            </div>
+        </div>
+        
+    </div>
+
+</form>

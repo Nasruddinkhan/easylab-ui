@@ -4,9 +4,11 @@
     "design": "Design",
     "design.colors": "Color System",
     "design.icons": "Material Icons",
-    "profile": "Profile",
+    "profile": "Update Profile",
     "profile.overview": "Overview",
-    "profile.settings": "Settings",
+    "profile.settings": "Profile",
+    "profile.changepaasword": "Change Password",
+    "bookappointment":"Book Appointment",
     "extensions": "Extensions",
     "sessions": "Sessions",
     "sessions.403": "403",
@@ -41,6 +43,11 @@
     "create_one": "Click here to create one",
     "please_enter": "Please enter"
   },
+ "bookapointment":{
+  "apointment-header":"Book Online Appointment",
+  "byself":"By Self",
+  "bydocter":"By Uploading Docter test Prescription"
+ },
   "register": {
     "welcome": "Welcome",
     "title": "It only takes a few seconds to create your account",

@@ -10,22 +10,27 @@
         "value": "5"
       }
     },
-   
-   
     {
+      "route": "bookappointment",
+      "name": "bookappointment",
+      "type": "link",
+      "icon": "bookappointment"
+    },
+   {
       "route": "profile",
       "name": "profile",
       "type": "sub",
       "icon": "person",
       "children": [
-        {
-          "route": "overview",
-          "name": "overview",
-          "type": "link"
-        },
+      
         {
           "route": "settings",
           "name": "settings",
+          "type": "link"
+        },
+        {
+          "route": "changepaasword",
+          "name": "changepaasword",
           "type": "link"
         }
       ]

@@ -38,9 +38,9 @@ const routes: Routes = [
         loadChildren: () => import('./helpers/helpers.module').then(m => m.HelpersModule),
       },
       {
-        path: 'permissions',
+        path: 'bookappointment',
         loadChildren: () =>
-          import('./permissions/permissions.module').then(m => m.PermissionsModule),
+          import('./book-appointment/book-appointment.module').then(m => m.BookAppointmentModule),
       },
     ],
   },
