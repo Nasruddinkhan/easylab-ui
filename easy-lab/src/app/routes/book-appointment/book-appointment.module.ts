@@ -6,13 +6,17 @@ import { BookAppointmentComponent } from './book-appointment.component';
 import { SharedModule } from '@shared';
 import { BySelfComponent } from './by-self/by-self.component';
 import { ByDocterComponent } from './by-docter/by-docter.component';
+import { ReportHistoryComponent } from './report-history/report-history.component';
+import { EnquiryComponent } from './enquiry/enquiry.component';
 
 
 @NgModule({
   declarations: [
     BookAppointmentComponent,
     BySelfComponent,
-    ByDocterComponent
+    ByDocterComponent,
+    ReportHistoryComponent,
+    EnquiryComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-header>Appointment and Report history</mat-card-header>
+    <form class="form-field-full ">
+        <div fxLayout="row wrap" fxLayoutGap="8px grid">
+            <div fxFlex="33.33" fxFlex.lt-md="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Simple placeholder">
+                </mat-form-field>
+            </div>
+            <div fxFlex="33.33" fxFlex.lt-md="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Simple placeholder">
+                </mat-form-field>
+            </div>
+            <div fxFlex="33.33" fxFlex.lt-md="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Mobile</mat-label>
+                    <input matInput placeholder="Simple placeholder">
+                </mat-form-field>
+            </div>
+           
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="8px grid">
+                <mat-form-field appearance="outline">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput placeholder="Simple placeholder" ></textarea>
+                </mat-form-field>
+        </div>
+        <div fxLayout="row wrap"  fxLayoutAlign="center" >
+            <button  mat-raised-button color="primary">Save</button>
+        </div>
+    </form>
+</mat-card>

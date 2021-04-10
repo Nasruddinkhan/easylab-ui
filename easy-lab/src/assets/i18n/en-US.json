@@ -5,6 +5,8 @@
     "design.colors": "Color System",
     "design.icons": "Material Icons",
     "profile": "Update Profile",
+    "appointment":"Appointment",
+    "appointment.report-history":"Reports History",
     "profile.overview": "Overview",
     "profile.settings": "Profile",
     "profile.changepaasword": "Change Password",
