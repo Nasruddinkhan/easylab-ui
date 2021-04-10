@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./by-docter.component.scss']
 })
 export class ByDocterComponent implements OnInit {
-
+  selectedFiles: File;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  selectFile(event) {
+    this.selectedFiles = event.target.files;
+  }
 }

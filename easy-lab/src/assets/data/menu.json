@@ -16,6 +16,20 @@
       "type": "link",
       "icon": "bookappointment"
     },
+    {
+      "route": "appointment",
+      "name": "appointment",
+      "type": "sub",
+      "icon": "book",
+      "children": [
+      
+        {
+          "route": "report-history",
+          "name": "report-history",
+          "type": "link"
+        }
+      ]
+    },
    {
       "route": "profile",
       "name": "profile",
