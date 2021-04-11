@@ -121,3 +121,4 @@ mvnw.cmd
 *.zip
 *.tar.gz
 *.rar
+/target/

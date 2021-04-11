@@ -17,7 +17,7 @@ import java.util.Map;
 public class HomeController {
 
     public static final String INDEX = "index";
-    private final UIEndpointProperties uiEndpointProperties;
+    private final UIEndpointProperties uiEndpointProperties=null;
     private String encodedProperties;
 
 
