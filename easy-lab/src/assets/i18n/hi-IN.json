@@ -30,7 +30,8 @@
   "bookapointment":{
     "apointment-header":"निर्धारित तारीख बुक करना",
     "byself":"स्वयं के द्वारा",
-    "bydocter":"डॉक्टर परीक्षण प्रिस्क्रिप्शन अपलोड करके"
+    "bydocter":"डॉक्टर परीक्षण प्रिस्क्रिप्शन अपलोड करके",
+    "apointment-staff-header":"नव नियुक्ति"
    },
   "user": {
     "profile": "profile",

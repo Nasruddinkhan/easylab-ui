@@ -27,9 +27,7 @@ export class AuthService {
   }
 
   login(email: string, password: string, rememberMe = false) {
-    console.log(email);
-    console.log(password);
-    console.log(rememberMe);
+  
     return this.http
       .post<Token>('/auth/login', { email, password, remember_me: rememberMe })
       .pipe(
