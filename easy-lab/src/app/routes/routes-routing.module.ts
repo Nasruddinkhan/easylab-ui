@@ -6,6 +6,7 @@ import { AdminLayoutComponent } from '../theme/admin-layout/admin-layout.compone
 import { AuthLayoutComponent } from '../theme/auth-layout/auth-layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './sessions/login/login.component';
+import { EnquiryComponent } from './sessions/enquiry/enquiry.component';
 import { RegisterComponent } from './sessions/register/register.component';
 import { AuthGuard } from '@core/authentication/auth.guard';
 
@@ -49,14 +50,14 @@ const routes: Routes = [
     component: AuthLayoutComponent,
     children: [
       { path: 'login', component: LoginComponent, data: { title: 'Login', titleI18n: 'login' } },
+      { path: 'enquiry', component: EnquiryComponent, data: { title: 'Enquiry', titleI18n: 'enquiry' } },      
       {
-        path: 'register',
-        component: RegisterComponent,
-        data: { title: 'Register', titleI18n: 'register' },
+        path: 'register', component: RegisterComponent, data: { title: 'Register', titleI18n: 'register' },
       },
     ],
   },
-  { path: '**', redirectTo: 'dashboard' },
+  { path: '**', redirectTo: 'enquiry' },
+  
 ];
 
 @NgModule({

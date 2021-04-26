@@ -56,6 +56,16 @@
     "have_an_account": "Already have an account",
     "register": "Create account"
   },
+  "enquiry": {
+    "enquiry": "Enquiry",
+    "name": "Name",
+    "mobile": "Mobile",
+    "email": "Email",
+    "message": "Message",
+    "save": "Save",
+    "cancel" : "Cancel"
+    
+  },
   "paginator": {
     "items_per_page_label": "Items per page:",
     "next_page_label": "Next page",

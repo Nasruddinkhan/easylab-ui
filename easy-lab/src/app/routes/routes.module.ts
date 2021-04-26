@@ -5,8 +5,9 @@ import { RoutesRoutingModule } from './routes-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './sessions/login/login.component';
 import { RegisterComponent } from './sessions/register/register.component';
+import { EnquiryComponent } from './sessions/enquiry/enquiry.component';
 
-const COMPONENTS = [DashboardComponent, LoginComponent, RegisterComponent];
+const COMPONENTS = [DashboardComponent, LoginComponent, RegisterComponent, EnquiryComponent];
 const COMPONENTS_DYNAMIC = [];
 
 @NgModule({
