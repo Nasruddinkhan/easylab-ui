@@ -8,6 +8,7 @@ import { BySelfComponent } from './by-self/by-self.component';
 import { ByDocterComponent } from './by-docter/by-docter.component';
 import { ReportHistoryComponent } from './report-history/report-history.component';
 import { EnquiryComponent } from './enquiry/enquiry.component';
+import { ByStafffComponent } from './by-stafff/by-stafff.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EnquiryComponent } from './enquiry/enquiry.component';
     BySelfComponent,
     ByDocterComponent,
     ReportHistoryComponent,
-    EnquiryComponent
+    EnquiryComponent,
+    ByStafffComponent
   ],
   imports: [
     CommonModule,

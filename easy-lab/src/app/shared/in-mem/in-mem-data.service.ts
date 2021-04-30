@@ -28,6 +28,7 @@ export class InMemDataService implements InMemoryDbService {
     name: 'Nasruddin khan',
     email: 'nasruddinkhan44@gmail.com',
     avatar: './assets/images/photo.jpeg',
+    role:'STAFF'
   }, {
     id: 2,
     username: 'hamid',
@@ -35,6 +36,7 @@ export class InMemDataService implements InMemoryDbService {
     name: 'Hamid',
     email: 'hamid@gmail.com',
     avatar: './assets/images/avatars/avatar-10.jpg',
+    role:'PATIENT'
   },
   {
     id: 3,
@@ -43,6 +45,8 @@ export class InMemDataService implements InMemoryDbService {
     name: 'sattar',
     email: 'sattar@gmail.com',
     avatar: './assets/images/avatars/avatar-10.jpg',
+    role:'ADMIN'
+
   }
 
 ];

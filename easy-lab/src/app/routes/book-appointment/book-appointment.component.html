@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card *ngIf="user.role === 'PATIENT'">
     
     <section>
       <h4>{{'bookapointment.apointment-header' | translate}} </h4>
@@ -10,4 +10,8 @@
     <app-by-self *ngIf="'by-self' === selectedType"></app-by-self>
     <app-by-docter *ngIf="'by-docter' === selectedType"></app-by-docter>
     
+  </mat-card>
+  <mat-card *ngIf="user.role !== 'PATIENT'">
+<!--       <h4>{{'bookapointment.apointment-staff-header'  | translate}} </h4>
+ -->   <app-by-stafff></app-by-stafff>
   </mat-card>

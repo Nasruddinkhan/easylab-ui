@@ -48,7 +48,8 @@
  "bookapointment":{
   "apointment-header":"Book Online Appointment",
   "byself":"By Self",
-  "bydocter":"By Uploading Docter test Prescription"
+  "bydocter":"By Uploading Docter test Prescription",
+  "apointment-staff-header":"New Appointment"
  },
   "register": {
     "welcome": "Welcome",
